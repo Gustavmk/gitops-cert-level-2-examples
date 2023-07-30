@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
 spec:
   generators:
+  - clusters: {} # Automatically use all clusters defined within Argo CD
     # matrix 'parent' generator
     - matrix:
         generators:
